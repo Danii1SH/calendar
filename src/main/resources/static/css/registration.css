@@ -1,0 +1,146 @@
+body {
+    background-color: #737272;
+}
+
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+
+.navbar-nav {
+    gap: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #5B6284;
+    border-radius: 30px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    transform: scale(1.05);
+}
+
+.user_profile{
+    display: inline-block;
+    margin: 0;
+}
+
+.bg-dark {
+    background-color: #000000 !important;
+}
+
+
+.card {
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    border: none;
+}
+
+
+.form-control {
+    background-color: #5B6284;
+    color: #ffffff;
+    border: 1px solid #5B6284;
+    border-radius: 5px;
+}
+
+.form-control::placeholder {
+    color: #d3d3d3;
+}
+
+.form-control:focus {
+    background-color: #5B6284;
+    border-color: #ffffff;
+    outline: none;
+    box-shadow: none;
+}
+
+
+.btn-primary {
+    background-color: #5B6284;
+    border-color: #5B6284;
+    border-radius: 30px;
+}
+
+.btn-primary:hover {
+    background-color: #6d7292;
+    border-color: #6d7292;
+    color: rgba(255, 255, 255, .5);
+}
+
+.btn-primary:active {
+    background-color: #4A516E !important;
+    border-color: #4A516E !important;
+}
+
+.btn-primary:focus {
+    box-shadow: none !important;
+}
+
+.form-check-label, label {
+    color: #ffffff;
+}
+
+input[type="radio"]:checked + label,
+input[type="checkbox"]:checked + label {
+    color: #ffffff;
+}
+
+#captchatext {
+    background-color: #5B6284;
+    color: #ffffff;
+    border: 1px solid #5B6284;
+    border-radius: 5px;
+}
+
+#captchatext:focus {
+    background-color: #5B6284;
+    border-color: #ffffff;
+    outline: none;
+    box-shadow: none;
+}
+
+.toggle-password-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.toggle-password-icon:hover {
+    opacity: 1;
+}
+
+.error-message {
+    color: red; /* Белый цвет текста */
+    padding: 10px; /* Отступы для лучшего визуального восприятия */
+    border-radius: 5px; /* Скругление углов */
+    font-weight: bold; /* Жирный текст */
+    font-size: 16px; /* Размер текста */
+    display: inline-block; /* Чтобы сообщение было в одной строке */
+
+}
+
+a {
+    color: #5B6284;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #6d7292;
+
+}
+

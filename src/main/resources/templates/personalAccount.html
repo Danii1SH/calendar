@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/personalAccount.css">
+</head>
+<body>
+<header class="bg-dark py-3">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="col-md-4 text-right">
+                <a href="/personalAccount/logout" class="exit-icon">
+                    <img src="/img/header_icon/exit.png" alt="Выход" style="width: 35px; height: 35px;">
+                </a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<div class="container mt-5">
+    <h1>
+        Добро пожаловать
+        <span th:text="${currentUser.firstName}"></span>
+        <span th:text="${currentUser.secondName}"></span>!
+    </h1>
+    <div class="data-box text-left">
+        <p>Почта: <span th:text="${currentUser.email}"></span></p>
+        <p>Пол: <span th:text="${currentUser.gender}"></span></p>
+        <p>Дата регистрации: <span th:text="${currentUser.creationDate}"></span></p>
+    </div>
+</div>
+</body>
+</html>
